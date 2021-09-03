@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="script.js"></script>
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <div class="display">
+        <p id="output">0</p>
+    </div>
+
+    <div class="first-row">
+        <button id="row1-line1" onclick="clearCalculator()" style="width: 168px;"> C </button>
+        <button id="row1-line2" onclick="persen()"> % </button>
+        <button id="row1-line3" value="/" onclick="seeValue('/')"> / </button>
+    </div>
+
+    <div class="second-row">
+        <button id="row2-line1" value="7" onclick="seeValue('7')"> 7 </button>
+        <button id="row2-line2" value="8" onclick="seeValue('8')"> 8 </button>
+        <button id="row2-line3" value="9" onclick="seeValue('9')"> 9 </button>
+        <button id="row2-line4" value="x" onclick="seeValue('*')"> x </button>
+    </div>
+
+    <div class="thrid-row">
+        <button id="row3-line1" value="4" onclick="seeValue('4')"> 4 </button>
+        <button id="row3-line2" value="5" onclick="seeValue('5')"> 5 </button>
+        <button id="row3-line3" value="6" onclick="seeValue('6')"> 6 </button>
+        <button id="row3-line4" value="-" onclick="seeValue('-')"> - </button>
+    </div>
+
+    <div class="fourth-row">
+        <button id="row4-line1" value="3" onclick="seeValue('3')"> 3 </button>
+        <button id="row4-line2" value="2" onclick="seeValue('2')"> 2 </button>
+        <button id="row4-line3" value="1" onclick="seeValue('1')"> 1 </button>
+        <button id="row4-line4" value="+" onclick="seeValue('+')"> + </button>
+    </div>
+
+    <div class="last-row">
+        <button id="row5-line1" value="0" onclick="seeValue('0')" style="border-bottom-left-radius: 15px;"> 0 </button>
+        <button id="row5-line2" value="." onclick="seeValue('.')"> . </button>
+        <button id="row5-line3" value="=" onclick="solve()" style="width: 168px; border-bottom-right-radius: 15px;"> = </button>
+    </div>
+    <footer>
+        <span class="author">Made by Perdana Putro Harwanto</span>
+    </footer>
+</body>
+</html>
